@@ -1,0 +1,264 @@
+/* font poppins */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+}
+/* common */
+
+/* Nav Bar Style */
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 52px;
+  margin-right: 120px;
+  margin-left: 120px;
+  margin-top: 87px;
+}
+
+div > ul {
+  display: flex;
+}
+div li {
+  list-style: none;
+  margin-right: 40px;
+  font-weight: 600;
+}
+li a {
+  text-decoration: none;
+  color: black;
+}
+#gsearch {
+  display: none;
+  transition-delay: 2s;
+  transition-duration: 2s;
+}
+
+.gsearch:hover #gsearch {
+  display: inline-block;
+  height: 25px;
+  margin-right: 15px;
+  border: 2px solid;
+  /* transform: scale(1.1); */
+  transform: translateY(5%);
+  transition-timing-function: ease-in-out;
+}
+
+/* Main CSS */
+.header-1 {
+  margin-left: 120px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 180px;
+}
+.blog-1 {
+  width: 582px;
+  height: 270px;
+}
+#blog-1 {
+  margin-bottom: 16px;
+}
+.btn {
+  background-color: #e02c6d;
+  border-radius: 41px;
+  height: 44px;
+  width: 200px;
+  color: #ffffff;
+  padding: 10px 24px;
+  margin-top: 16px;
+}
+a {
+  text-decoration: none;
+}
+.header-image {
+  background-image: url(/images/circledesign.svg);
+  margin-right: 120px;
+  width: 475px;
+  height: 475px;
+}
+#camera-img {
+  height: 414px;
+  width: 440px;
+}
+.brands {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  border: 1px solid #ffffff;
+  margin-top: 69px;
+  margin-left: 165px;
+  margin-right: 165px;
+  align-items: center;
+  height: 110px;
+  padding-left: 30px;
+}
+
+/* Product section CSS */
+.shopping {
+  margin-right: 180px;
+  background-color: #aaaaaa;
+  width: 1080px;
+  height: 1780px;
+  margin-left: 450px;
+  margin-right: 196px;
+  border: 2px solid #aaaaaa;
+  border-radius: 5px;
+}
+.shop-title {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+.all-products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  margin-top: 30px;
+  align-items: center;
+  padding-left: 3px;
+}
+.products {
+  width: 320px;
+  height: 500px;
+  background-color: #ffffff;
+  text-align: left;
+  padding-left: 14px;
+  border-radius: 5px;
+}
+.products img {
+  padding-left: 2px;
+  padding-top: 17px;
+}
+.rating {
+  color: #fb8200;
+}
+#see-more {
+  text-align: right;
+  margin-top: 50px;
+  color: #e02c6d;
+}
+/* Feedback */
+.blog-2 {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 165px;
+  margin-top: 100px;
+  background-color: #aaaaaa;
+}
+.feedback-p {
+  padding: 12px;
+}
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #e02c6d;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #e02c6d;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+/* Footer */
+
+.site-footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Media Query for Mobile */
+@media only screen and (max-width: 688px) {
+  body {
+    background-color: #fb8200;
+    /* overflow: hidden; */
+  }
+  nav {
+    display: none;
+  }
+  .header-1 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    /* margin-bottom: 30px; */
+  }
+  .brand {
+    margin-top: 30px;
+  }
+  .brands {
+    /* width: 100%; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+    align-items: center;
+    border: 0px;
+    overflow: hidden;
+  }
+  .shopping {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    background-color: #aaaaaa;
+    width: 350px;
+    height: 5200px;
+    margin-left: 170px;
+    margin-right: 196px;
+    margin-top: 30px;
+  }
+  .shop-title {
+    text-align: center;
+  }
+  .all-products {
+    width: 329px;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    justify-content: center;
+    margin-left: 7px;
+  }
+  #see-more {
+    margin-bottom: 50px;
+    text-align: right;
+  }
+  .site-footer {
+    height: 211px;
+    margin-top: 50px;
+    justify-content: center;
+  }
+  .blog-2 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-right: 50px;
+  }
+  .blog-2 img {
+    align-items: center;
+  }
+  #feedback {
+    text-align: center;
+  }
+}
