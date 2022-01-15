@@ -75,7 +75,7 @@ a {
   text-decoration: none;
 }
 .header-image {
-  background-image: url(/images/circledesign.svg);
+  background-image: url(../images/circledesign.svg);
   margin-right: 120px;
   width: 475px;
   height: 475px;
